@@ -5,13 +5,13 @@ require "json/logger/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "json-logger"
+  spec.name        = "ougai-json-logger"
   spec.version     = OugaiJson::Logger::VERSION
   spec.authors     = ["Jack.Wu"]
-  spec.email       = ["jwu4000@outlook.com"]
+  spec.email       = ["jwu4000@outlook.com", "xuwupeng2000@gmail.com"]
   spec.homepage    = "https://github.com/xuwupeng2000/json-logger"
-  spec.summary     = "A json looger for Rails, it is based on lograge and ougai, and it is a rails engine"
-  spec.description = "A json looger for Rails, it is based on lograge and ougai, and it is a rails engine, it works out of the box, just add it as gem is enough"
+  spec.summary     = "A Ougai based json looger for Rails, it is based on lograge and ougai, and it is a rails engine"
+  spec.description = "A Ougai json looger for Rails, it is based on lograge and ougai, and it is a rails engine, it works out of the box, just add it as gem is enough"
   spec.license     = "MIT"
 
   spec.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
