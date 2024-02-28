@@ -1,3 +1,6 @@
+require 'lograge'
+require 'json/logger/custom_options'
+
 module Json
   module Logger
     class Engine < ::Rails::Engine
@@ -7,8 +10,6 @@ module Json
         Rails.application.configure do
           config.logger = Json::Logger::Logger.custom_logger(name: 'Rails')
 
-          require 'lograge'
-          require 'json/logger/custom_options'
 
           config.lograge.enabled = true
           config.colorize_logging = false
