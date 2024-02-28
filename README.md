@@ -11,7 +11,6 @@ What it does:
     Rails.application.configure do
       config.logger = OugaiJson::Logger.custom_logger(name: 'Rails')
 
-
       config.lograge.enabled = true
       config.colorize_logging = false
 
@@ -39,6 +38,7 @@ Presently, there is support for custom hooks. However, if you prefer to make mod
 
 ```ruby
 gem 'ougai-json-logger'
+
 ```
 
 And then execute:
@@ -46,10 +46,6 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
-```bash
-$ gem install ougai-json-logger
-```
 
 ## Contributing
 Contribution directions go here.
