@@ -20,6 +20,15 @@ What it does:
   end
 ```
 
+Log output
+```
+{"@timestamp":"2024-02-28T09:07:58.098Z","message":"  ActiveRecord::SchemaMigration Load (0.1ms)  SELECT \"schema_migrations\".\"version\" FROM \"schema_migrations\" ORDER BY \"schema_migrations\".\"version\" ASC","log":{"level":"DEBUG","logger":"Rails"},"trace":{"id":null},"error":{},"request":{},"response":{},"process":{"id":45821},"url":{},"event":{}}
+{"@timestamp":"2024-02-28T09:07:58.121Z","message":"  Rendering /Users/jawu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb","log":{"level":"DEBUG","logger":"Rails"},"trace":{"id":null},"error":{},"request":{},"response":{},"process":{"id":45821},"url":{},"event":{}}
+{"@timestamp":"2024-02-28T09:07:58.122Z","message":"Rails Request","log":{"level":"INFO","logger":"Rails"},"trace":{"id":null},"error":{},"request":{"method":"GET","body":{"content":"{\"controller\"=>\"rails/welcome\", \"action\"=>\"index\"}"}},"response":{"status_code":200},"process":{"id":45821},"url":{"path":"/"},"event":{"action":"Rails::WelcomeController#index","duration":6.79}}
+{"@timestamp":"2024-02-28T09:07:59.588Z","message":"  Rendering /Users/jawu/.rbenv/versions/3.3.0/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb","log":{"level":"DEBUG","logger":"Rails"},"trace":{"id":null},"error":{},"request":{},"response":{},"process":{"id":45821},"url":{},"event":{}}
+{"@timestamp":"2024-02-28T09:07:59.588Z","message":"Rails Request","log":{"level":"INFO","logger":"Rails"},"trace":{"id":null},"error":{},"request":{"method":"GET","body":{"content":"{\"controller\"=>\"rails/welcome\", \"action\"=>\"index\"}"}},"response":{"status_code":200},"process":{"id":45821},"url":{"path":"/"},"event":{"action":"Rails::WelcomeController#index","duration":1.82}}
+```
+
 
 ## Installation
 Adding this gem to your Gemfile is all that is required. It is based on a Rails engine and will automatically initialize itself upon startup.
