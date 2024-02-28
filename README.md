@@ -2,7 +2,24 @@
 Short description and motivation.
 
 ## Usage
-How to use my plugin.
+A JSON logger for Rails, this logger is built upon lograge and ougai. It functions as a Rails engine and works seamlessly without any additional configuration. Simply adding it as a gem is sufficient to enable its functionality.
+
+What it does:
+```ruby
+  initializer(:rails_stdout_logging, before: :initialize_logger) do
+    Rails.application.configure do
+      config.logger = Json::Logger::Logger.custom_logger(name: 'Rails')
+
+
+      config.lograge.enabled = true
+      config.colorize_logging = false
+
+      config.lograge.formatter = Lograge::Formatters::Raw.new
+      config.lograge.custom_options = Json::Loggger::CustomOptions
+    end
+  end
+```
+
 
 ## Installation
 Add this line to your application's Gemfile:
