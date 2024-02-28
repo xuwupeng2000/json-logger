@@ -1,4 +1,4 @@
-#Ougai Json Logger
+# Ougai Json Logger
 To ensure consistency in log formatting across your Rails services, using a JSON logger is often necessary, especially when working with log services such as Kibana. This gem provides a pre-defined JSON logging format specifically tailored for Rails applications. By adding this gem to your Gemfile, you can achieve the desired log consistency across your Rails services effortlessly.
 
 
