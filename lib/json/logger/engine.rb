@@ -8,7 +8,7 @@ module OugaiJson
 
       initializer(:rails_stdout_logging, before: :initialize_logger) do
         Rails.application.configure do
-          config.logger = OugaiJson::Logger::Logger.custom_logger(name: 'Rails')
+          config.logger = OugaiJson::Logger.custom_logger(name: 'Rails')
 
 
           config.lograge.enabled = true
