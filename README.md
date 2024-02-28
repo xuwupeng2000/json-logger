@@ -11,7 +11,6 @@ What it does:
     Rails.application.configure do
       config.logger = Json::Logger::Logger.custom_logger(name: 'Rails')
 
-
       config.lograge.enabled = true
       config.colorize_logging = false
 
@@ -38,17 +37,12 @@ Presently, there is support for custom hooks. However, if you prefer to make mod
 
 
 ```ruby
-gem 'json-logger'
+gem "json-logger", github: "xuwupeng2000/json-logger"
 ```
 
 And then execute:
 ```bash
 $ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install json-logger
 ```
 
 ## Contributing
