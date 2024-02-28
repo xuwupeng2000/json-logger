@@ -38,7 +38,7 @@ Presently, there is support for custom hooks. However, if you prefer to make mod
 
 
 ```ruby
-gem 'json-logger'
+gem 'ougai-json-logger'
 ```
 
 And then execute:
@@ -48,7 +48,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install json-logger
+$ gem install ougai-json-logger
 ```
 
 ## Contributing
