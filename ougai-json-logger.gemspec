@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.description = "A Ougai json looger for Rails, it is based on lograge and ougai, and it is a rails engine, it works out of the box, just add it as gem is enough"
   spec.license     = "MIT"
 
-  spec.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  spec.files = Dir['{lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   spec.required_ruby_version = '>= 2.5'
 
