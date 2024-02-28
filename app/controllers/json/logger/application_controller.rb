@@ -1,4 +1,4 @@
-module Json
+module OugaiJson
   module Logger
     class ApplicationController < ActionController::Base
       protect_from_forgery with: :exception

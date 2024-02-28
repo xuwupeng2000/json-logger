@@ -6,7 +6,7 @@ require "json/logger/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
   spec.name        = "json-logger"
-  spec.version     = Json::Logger::VERSION
+  spec.version     = OugaiJson::Logger::VERSION
   spec.authors     = ["Jack.Wu"]
   spec.email       = ["jwu4000@outlook.com"]
   spec.homepage    = "https://github.com/xuwupeng2000/json-logger"
