@@ -1,5 +1,5 @@
 require 'lograge'
-require 'json/logger/custom_options'
+require 'ougai_json/logger/custom_options'
 
 module OugaiJson
   module Logger

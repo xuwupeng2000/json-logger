@@ -3,7 +3,7 @@ require_relative 'boot'
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "json/logger"
+require "ougai_json/logger"
 
 module Dummy
   class Application < Rails::Application
