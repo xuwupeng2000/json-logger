@@ -1,2 +1,2 @@
-Json::Logger::Engine.routes.draw do
+OugaiJson::Logger::Engine.routes.draw do
 end

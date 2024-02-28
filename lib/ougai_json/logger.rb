@@ -1,10 +1,10 @@
 require 'ougai'
 require 'mono_logger'
-require 'json/logger/formatter'
-require "json/logger/engine"
+require 'ougai_json/logger/formatter'
+require "ougai_json/logger/engine"
 
-module Json
-  module Logger
+module OugaiJson
+  module Logging
     class Logger < Ougai::Logger
       def initialize(logdev, **)
         super
@@ -12,7 +12,7 @@ module Json
       end
 
       def create_formatter
-        return Json::Logger::Formatter.new
+        return OugaiJson::Logger::Formatter.new
       end
 
       def self.custom_logger(name: '', level: Rails.logger.present? ? Rails.logger.level : MonoLogger::INFO, type: :ougai)

@@ -1,6 +1,5 @@
 module OugaiJson
   module Logger
-    module ApplicationHelper
-    end
+    VERSION = '0.1.2'
   end
 end

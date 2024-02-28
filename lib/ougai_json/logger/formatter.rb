@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Json
+module OugaiJson
   module Logger
     class Formatter < Ougai::Formatters::Bunyan
       def _call(severity, time, progname, data)

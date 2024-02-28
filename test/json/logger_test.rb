@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class Json::Logger::Test < ActiveSupport::TestCase
+class OugaiJson::Logger::Test < ActiveSupport::TestCase
   test "truth" do
-    assert_kind_of Module, Json::Logger
+    assert_kind_of Module, OugaiJson::Logger
   end
 end

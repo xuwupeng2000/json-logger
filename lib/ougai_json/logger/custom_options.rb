@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Json
+module OugaiJson
   module Loggger
     module CustomOptions
       class << self

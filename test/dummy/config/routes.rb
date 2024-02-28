@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount Json::Logger::Engine => "/json-logger"
+  mount OugaiJson::Logger::Engine => "/ougai-json-logger"
 end

@@ -1,4 +1,4 @@
-# Json::Logger
+#Ougai Json Logger
 To ensure consistency in log formatting across your Rails services, using a JSON logger is often necessary, especially when working with log services such as Kibana. This gem provides a pre-defined JSON logging format specifically tailored for Rails applications. By adding this gem to your Gemfile, you can achieve the desired log consistency across your Rails services effortlessly.
 
 
@@ -9,13 +9,13 @@ What it does:
 ```ruby
   initializer(:rails_stdout_logging, before: :initialize_logger) do
     Rails.application.configure do
-      config.logger = Json::Logger::Logger.custom_logger(name: 'Rails')
+      config.logger = OugaiJson::Logger.custom_logger(name: 'Rails')
 
       config.lograge.enabled = true
       config.colorize_logging = false
 
       config.lograge.formatter = Lograge::Formatters::Raw.new
-      config.lograge.custom_options = Json::Loggger::CustomOptions
+      config.lograge.custom_options = OugaiJson::Loggger::CustomOptions
     end
   end
 ```
@@ -37,13 +37,15 @@ Presently, there is support for custom hooks. However, if you prefer to make mod
 
 
 ```ruby
-gem "json-logger", github: "xuwupeng2000/json-logger"
+gem 'ougai-json-logger'
+
 ```
 
 And then execute:
 ```bash
 $ bundle
 ```
+
 
 ## Contributing
 Contribution directions go here.
