@@ -22,7 +22,10 @@ What it does:
 
 
 ## Installation
-Add this line to your application's Gemfile:
+Adding this gem to your Gemfile is all that is required. It is based on a Rails engine and will automatically initialize itself upon startup.
+
+Presently, there is support for custom hooks. However, if you prefer to make modifications to the formatter in the gem, you can do so by copying it to your lib folder and making the desired changes according to your requirements.
+
 
 ```ruby
 gem 'json-logger'
