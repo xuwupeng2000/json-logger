@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ougai-json-logger (0.1.2)
+    ougai-json-logger (0.1.3)
       lograge
       mono_logger (~> 1.0)
       ougai
