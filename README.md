@@ -1,5 +1,6 @@
 # Json::Logger
-Short description and motivation.
+To ensure consistency in log formatting across your Rails services, using a JSON logger is often necessary, especially when working with log services such as Kibana. This gem provides a pre-defined JSON logging format specifically tailored for Rails applications. By adding this gem to your Gemfile, you can achieve the desired log consistency across your Rails services effortlessly.
+
 
 ## Usage
 A JSON logger for Rails, this logger is built upon lograge and ougai. It functions as a Rails engine and works seamlessly without any additional configuration. Simply adding it as a gem is sufficient to enable its functionality.
