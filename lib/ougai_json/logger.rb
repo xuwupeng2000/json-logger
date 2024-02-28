@@ -4,7 +4,7 @@ require 'ougai_json/logger/formatter'
 require "ougai_json/logger/engine"
 
 module OugaiJson
-  module Logging
+  module Logger
     class Logger < Ougai::Logger
       def initialize(logdev, **)
         super
